@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Animal Haven</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body class="menu-screen lake-menu-page">
+  <header class="site-header">
+    <h1><b>THE ANIMAL HAVEN</b></h1>
+  </header>
+
+  <main class="scene">
+    <div class="menu-overlay">
+    <section class="scene-text">
+      <p>
+        Mufasa finds a peaceful oasis hidden in the forest.  
+        A small lake glows in the sunlight, and the friendly animals gather around.
+      </p>
+      <p>
+        He can rest here for a while... and ask for help to find his way home.
+      </p>
+    </section>
+    </div>
+
+    <nav class="choices">
+      <!-- switches background and text -->
+      <button
+        class="choice-btn drinkWater-btn"
+        data-bg="photos/img106Water.png"
+        data-text="Mufasa drinks the cool water from the lake. He feels refreshed and a little braver."
+      >
+        Drink some water
+      </button>
+
+      <!-- switches background and text -->
+      <button
+        class="choice-btn eatFood-btn"
+        data-bg="photos/img107Food.png"
+        data-text="A kind squirrel shares some nuts and berries. Mufasa's stomach is full again."
+      >
+        Eat some food
+      </button>
+
+      <!-- switches background and text again -->
+      <button
+  class="choice-btn talk-animals hidden"
+  data-bg="photos/img105.png"
+  data-text="The animals tell Mufasa how to return home…"
+>
+  Talk to the animals
+</button>
+
+
+      <!--  button is hidden until cat drinkks water n eats food-->
+      <button
+        class="choice-btn talk-btn hidden"
+        data-next="8_back_to_family.html"
+      >
+        Lets go home!
+      </button>
+    </nav>
+  </main>
+
+  <footer class="site-footer">
+    <small>&copy; CCT260 group project</small>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

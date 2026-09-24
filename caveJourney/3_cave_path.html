@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cave Encounter</title>
+  <link rel="stylesheet" href="../style.css" />
+</head>
+
+<body class="menu-screen cave-page">
+  <header class="site-header">
+    <h1><b>THE CAVE</b></h1>
+  </header>
+
+  <main class="scene">
+<section class="scene-text">
+      <p>
+        Mufasa squeezes into a dark cave, hoping it will lead him out of the forest.
+        As he walks deeper inside, he hears a loud rumble behind him.
+      </p>
+      <p>
+        The entrance collapses. Dust fills the air. When it finally clears, he sees it:
+        a huge dog guarding the only exit.
+      </p>
+      <p>
+        Mufasa's heart races. He has two choices: stand his ground, or try to quietly slip past.
+      </p>
+    </section>
+
+    <nav class="choices">
+      <!-- ::fight the dog choice:: -->
+      <button
+        class="choice-btn cave-choice"
+        data-group="cave"
+        data-bg="../photos/img112.png"
+        data-text="Mufasa tried his best, but the dog was too strong and hungry. The dog kills Mustafa."
+      >
+        Fight the dog
+      </button>
+      
+
+      <!-- ::Sneak past:: -->
+      <button
+        class="choice-btn cave-choice sneak-btn"
+        data-group="cave"
+        data-bg="../photos/img113.png"
+        data-text="Mufasa lowers his body to the ground and moves as silently as he can, paw by paw, trying to slip past the dog without being seen..."
+      >
+        Sneak past the dog
+      </button>
+      <!-- back to family button only after SNEAKING past the dog -->
+<button
+  class="choice-btn run-btn hidden"
+  data-next="../8_back_to_family.html"
+>
+
+  Make a run for it!
+</button>
+
+
+<!-- continue (button appears) to death after trying to fight the dog -->
+<button
+  class="choice-btn continue-bad-btn hidden"
+  data-next="9badEnding.html"
+>
+  Continue...
+</button>
+
+
+
+    </nav>
+  </main>
+
+  <footer class="site-footer">
+    <small>&copy; CCT260 group project</small>
+  </footer>
+
+  <script src="../script.js"></script>
+</body>
+</html>
